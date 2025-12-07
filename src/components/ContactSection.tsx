@@ -79,7 +79,7 @@ export function ContactSection({
               </h3>
               <p className="text-gray-600 text-sm">
                 Ordinace je dostupná autobusem linky 250, 267 - zastávka Běchovice.
-                Parkování je možné přímo před budovou.
+                Parkování je možné u nedalekého Lidlu (3 minuty chůze).
               </p>
             </div>
           </div>
