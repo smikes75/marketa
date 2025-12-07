@@ -16,10 +16,15 @@ const defaultTeam: TeamMember[] = [
 ]
 
 const defaultServices: string[] = [
+  'Pracovně lékařské prohlídky',
   'Preventivní prohlídky',
   'Očkování',
-  'Laboratorní odběry',
-  'EKG vyšetření',
+  'CRP',
+  'FOB test',
+  'Glukometr',
+  'Strep A test',
+  'Vyšetření INR',
+  'EKG',
 ]
 
 export function AboutSection({
@@ -57,17 +62,9 @@ export function AboutSection({
               {description ? (
                 <p>{description}</p>
               ) : (
-                <>
-                  <p>
-                    Vítejte v ordinaci praktického lékaře pro dospělé. Naším cílem je poskytovat kvalitní a komplexní zdravotní péči v příjemném a profesionálním prostředí.
-                  </p>
-                  <p>
-                    Ordinace se nachází v Praze 9 - Běchovicích a nabízí široké spektrum služeb od preventivních prohlídek přes léčbu akutních onemocnění až po dispenzární péči o chronicky nemocné.
-                  </p>
-                  <p>
-                    Klademe důraz na individuální přístup ke každému pacientovi a snažíme se vytvořit důvěrný vztah založený na vzájemném respektu.
-                  </p>
-                </>
+                <p>
+                  Zajišťujeme komplexní péči v oboru všeobecné lékařství pro dospělé.
+                </p>
               )}
             </div>
 

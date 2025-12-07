@@ -10,16 +10,16 @@ interface OfficeHoursSectionProps {
 }
 
 const defaultHours: OfficeHour[] = [
-  { day: 'Pondělí', hours: '7:00 - 12:30' },
-  { day: 'Úterý', hours: '7:00 - 12:30' },
-  { day: 'Středa', hours: '12:00 - 18:00' },
-  { day: 'Čtvrtek', hours: '7:00 - 12:30' },
-  { day: 'Pátek', hours: '7:00 - 12:30' },
+  { day: 'Pondělí', hours: '7:30 - 13:15' },
+  { day: 'Úterý', hours: '7:30 - 13:15' },
+  { day: 'Středa', hours: '12:30 - 18:30' },
+  { day: 'Čtvrtek', hours: '7:15 - 14:00' },
+  { day: 'Pátek', hours: '7:30 - 13:15' },
 ]
 
 export function OfficeHoursSection({
   hours,
-  note = 'Doporučujeme objednání předem. Akutní pacienti jsou přijímáni bez objednání dle aktuálních možností ordinace.'
+  note = 'Akutní potíže: objednání telefonicky. Ostatní vyšetření: objednání elektronicky.'
 }: OfficeHoursSectionProps) {
   const displayHours = hours && hours.length > 0 ? hours : defaultHours
 

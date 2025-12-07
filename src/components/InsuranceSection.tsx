@@ -10,11 +10,9 @@ interface InsuranceSectionProps {
 const defaultInsurances: Insurance[] = [
   { code: '111', name: 'VZP' },
   { code: '201', name: 'VOZP' },
-  { code: '205', name: 'ČPZP' },
   { code: '207', name: 'OZP' },
-  { code: '209', name: 'ZPŠ' },
   { code: '211', name: 'ZPMV' },
-  { code: '213', name: 'RBP' },
+  { code: '205', name: 'ČPZP' },
 ]
 
 export function InsuranceSection({ insurances }: InsuranceSectionProps) {
@@ -26,7 +24,7 @@ export function InsuranceSection({ insurances }: InsuranceSectionProps) {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Smluvní partneři</span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Pojišťovny</h2>
           <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-            Máme uzavřeny smlouvy se všemi zdravotními pojišťovnami působícími v České republice.
+            Máme uzavřeny smlouvy s těmito zdravotními pojišťovnami.
           </p>
         </div>
 
