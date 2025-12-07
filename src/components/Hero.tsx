@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface HeroProps {
   siteName?: string
   subtitle?: string
@@ -5,12 +7,18 @@ interface HeroProps {
 
 export function Hero({ siteName, subtitle }: HeroProps) {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-light">
-        <div className="absolute inset-0 opacity-20" style={{
-          backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"
-        }}></div>
+    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=2000&q=80"
+          alt="Lékařská ordinace"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary-light/70"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -22,7 +30,7 @@ export function Hero({ siteName, subtitle }: HeroProps) {
             {subtitle || 'Komplexní péče o dospělé pacienty v příjemném prostředí ordinace v Praze 9 - Běchovice'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#objednat" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center">
+            <a href="#objednat" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center shadow-lg">
               Objednat se online
             </a>
             <a href="#kontakt" className="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center">

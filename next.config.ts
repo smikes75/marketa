@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: false,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
 };
 
 export default withPayload(nextConfig);
