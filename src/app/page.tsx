@@ -67,12 +67,14 @@ export default async function Home() {
           siteName={siteSettings.siteName}
           subtitle={siteSettings.subtitle}
         />
+{/* AboutSection hidden
         <AboutSection
           siteName={siteSettings.siteName}
           description={siteSettings.description}
           team={team}
           services={services}
         />
+*/}
         <ServicesSection />
         <OfficeHoursSection />
         <InsuranceSection />
