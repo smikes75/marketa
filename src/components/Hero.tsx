@@ -32,10 +32,13 @@ export function Hero({ siteName, subtitle }: HeroProps) {
             </div>
           </div>
 
-          {/* Logo icon - right side */}
-          <div className="hidden md:flex justify-center items-center">
+          {/* Phone and logo - right side */}
+          <div className="hidden md:flex flex-col justify-center items-center gap-8">
+            <a href="tel:+420281970369" className="text-3xl lg:text-4xl font-bold text-white hover:text-white/80 transition-colors">
+              +420 281 970 369
+            </a>
             <div className="relative">
-              <svg className="w-72 h-72 lg:w-96 lg:h-96 text-white/20" viewBox="0 0 100 100" fill="currentColor">
+              <svg className="w-48 h-48 lg:w-64 lg:h-64 text-white/20" viewBox="0 0 100 100" fill="currentColor">
                 <rect x="40" y="20" width="20" height="60" rx="4" fill="currentColor"/>
                 <rect x="20" y="40" width="60" height="20" rx="4" fill="currentColor"/>
                 <path d="M50 75 C50 75, 35 60, 35 52 C35 46, 42 42, 50 50 C58 42, 65 46, 65 52 C65 60, 50 75, 50 75Z" fill="white" opacity="0.3"/>

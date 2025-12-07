@@ -61,7 +61,7 @@ export default async function Home() {
         type={(announcement.type as 'info' | 'warning' | 'error' | 'success') || 'warning'}
         enabled={announcement.enabled ?? false}
       />
-      <Header siteName={siteSettings.siteName} />
+      <Header siteName="Praktický lékař s.r.o." />
       <main>
         <Hero
           siteName={siteSettings.siteName}
