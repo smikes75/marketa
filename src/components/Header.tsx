@@ -17,11 +17,10 @@ export function Header({ siteName = 'Praktický lékař s.r.o.' }: HeaderProps) 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-105">
             <svg className="w-12 h-12 text-primary" viewBox="0 0 100 100" fill="currentColor">
-              <rect x="44" y="70" width="12" height="25" fill="#8B7355"/>
-              <ellipse cx="50" cy="55" rx="30" ry="20" fill="currentColor"/>
-              <ellipse cx="50" cy="40" rx="25" ry="18" fill="currentColor" opacity="0.9"/>
-              <ellipse cx="50" cy="28" rx="18" ry="14" fill="currentColor" opacity="0.8"/>
-              <ellipse cx="50" cy="18" rx="10" ry="10" fill="currentColor" opacity="0.7"/>
+              {/* Medical cross with heart */}
+              <rect x="40" y="20" width="20" height="60" rx="4" fill="currentColor"/>
+              <rect x="20" y="40" width="60" height="20" rx="4" fill="currentColor"/>
+              <path d="M50 75 C50 75, 35 60, 35 52 C35 46, 42 42, 50 50 C58 42, 65 46, 65 52 C65 60, 50 75, 50 75Z" fill="white"/>
             </svg>
             <div>
               <div className="font-semibold text-primary text-lg leading-tight">{siteName}</div>

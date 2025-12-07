@@ -25,11 +25,10 @@ export function Footer({
           <div>
             <div className="flex items-center gap-3 mb-4">
               <svg className="w-10 h-10 text-accent" viewBox="0 0 100 100" fill="currentColor">
-                <rect x="44" y="70" width="12" height="25" fill="#8B7355"/>
-                <ellipse cx="50" cy="55" rx="30" ry="20"/>
-                <ellipse cx="50" cy="40" rx="25" ry="18" opacity="0.9"/>
-                <ellipse cx="50" cy="28" rx="18" ry="14" opacity="0.8"/>
-                <ellipse cx="50" cy="18" rx="10" ry="10" opacity="0.7"/>
+                {/* Medical cross with heart */}
+                <rect x="40" y="20" width="20" height="60" rx="4" fill="currentColor"/>
+                <rect x="20" y="40" width="60" height="20" rx="4" fill="currentColor"/>
+                <path d="M50 75 C50 75, 35 60, 35 52 C35 46, 42 42, 50 50 C58 42, 65 46, 65 52 C65 60, 50 75, 50 75Z" fill="#1f2937"/>
               </svg>
               <div>
                 <div className="font-semibold text-lg">{siteName}</div>

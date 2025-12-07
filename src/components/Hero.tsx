@@ -53,14 +53,11 @@ export function Hero({ siteName, subtitle }: HeroProps) {
         </div>
       </div>
 
-      {/* Decorative tree */}
+      {/* Decorative medical cross */}
       <div className="absolute left-0 bottom-0 opacity-10 hidden lg:block">
-        <svg className="w-64 h-64" viewBox="0 0 100 100" fill="white">
-          <rect x="44" y="70" width="12" height="25" fill="white"/>
-          <ellipse cx="50" cy="55" rx="30" ry="20"/>
-          <ellipse cx="50" cy="40" rx="25" ry="18" opacity="0.9"/>
-          <ellipse cx="50" cy="28" rx="18" ry="14" opacity="0.8"/>
-          <ellipse cx="50" cy="18" rx="10" ry="10" opacity="0.7"/>
+        <svg className="w-48 h-48" viewBox="0 0 100 100" fill="white">
+          <rect x="40" y="10" width="20" height="80" rx="4"/>
+          <rect x="10" y="40" width="80" height="20" rx="4"/>
         </svg>
       </div>
     </section>
