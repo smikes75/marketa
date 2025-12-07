@@ -9,9 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.7",
+    "@payloadcms/db-mongodb": "^3.67.0",
+    "@payloadcms/next": "^3.67.0",
+    "@payloadcms/richtext-lexical": "^3.67.0",
+    "next": "^15.5.7",
+    "payload": "^3.67.0",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
