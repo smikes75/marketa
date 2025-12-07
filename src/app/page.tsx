@@ -5,6 +5,7 @@ import {
   Announcement,
   Hero,
   AboutSection,
+  ServicesSection,
   OfficeHoursSection,
   InsuranceSection,
   BookingForm,
@@ -72,6 +73,7 @@ export default async function Home() {
           team={team}
           services={services}
         />
+        <ServicesSection />
         <OfficeHoursSection
           hours={officeHours}
           note={siteSettings.officeHoursNote}
