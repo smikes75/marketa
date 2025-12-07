@@ -16,11 +16,23 @@ export function Hero({ siteName, subtitle }: HeroProps) {
           {/* Text content - left side */}
           <div className="text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Vaše zdraví je naší prioritou
+              MUDr. Markéta Plašilová
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-              {subtitle || 'Komplexní péče o dospělé pacienty v příjemném prostředí ordinace v Praze 9 - Běchovice'}
+            <p className="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed">
+              Zajišťujeme komplexní péči v oboru všeobecné lékařství pro dospělé.
             </p>
+
+            {/* Team info */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                <div className="font-semibold">MUDr. Markéta Plašilová</div>
+                <div className="text-white/80 text-sm">Praktický lékař</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                <div className="font-semibold">Bc. Martina Fialová</div>
+                <div className="text-white/80 text-sm">Zdravotní sestra</div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#objednat" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center shadow-lg">
                 Objednat se online
