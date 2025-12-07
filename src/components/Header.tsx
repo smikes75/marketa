@@ -7,7 +7,7 @@ interface HeaderProps {
   siteName?: string
 }
 
-export function Header({ siteName = 'MUDr. Markéta Plašilová' }: HeaderProps) {
+export function Header({ siteName = 'Praktický lékař s.r.o.' }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

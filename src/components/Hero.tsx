@@ -23,16 +23,9 @@ export function Hero({ siteName, subtitle }: HeroProps) {
             </p>
 
             {/* Team info */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
-                <div className="font-semibold">MUDr. Markéta Plašilová</div>
-                <div className="text-white/80 text-sm">Praktický lékař</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
-                <div className="font-semibold">Bc. Martina Fialová</div>
-                <div className="text-white/80 text-sm">Zdravotní sestra</div>
-              </div>
-            </div>
+            <p className="text-white/90 mb-8">
+              <span className="font-semibold">Bc. Martina Fialová</span> – Zdravotní sestra
+            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#objednat" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center shadow-lg">
                 Objednat se online
