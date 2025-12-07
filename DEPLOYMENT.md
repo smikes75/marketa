@@ -43,7 +43,7 @@ vercel --prod
 V Vercel Dashboard → Project Settings → Environment Variables nastavte:
 
 ```
-MONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/prakticky-lekar
+MONGODB_URI=mongodb+srv://YOUR_USER:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/prakticky-lekar
 PAYLOAD_SECRET=vygenerujte-bezpecny-klic-min-32-znaku
 NEXT_PUBLIC_SITE_URL=https://www.prakticky-lekar-sro.cz
 ```
