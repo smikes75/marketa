@@ -74,11 +74,8 @@ export default async function Home() {
           services={services}
         />
         <ServicesSection />
-        <OfficeHoursSection
-          hours={officeHours}
-          note={siteSettings.officeHoursNote}
-        />
-        <InsuranceSection insurances={insurances} />
+        <OfficeHoursSection />
+        <InsuranceSection />
         <BookingForm />
         <ContactSection
           address={siteSettings.address}
