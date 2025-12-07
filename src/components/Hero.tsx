@@ -13,16 +13,14 @@ export function Hero({ siteName, subtitle }: HeroProps) {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Text content - left side */}
           <div className="text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 leading-tight">
               MUDr. Markéta Plašilová
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-6 leading-relaxed">
-              Zajišťujeme komplexní péči v oboru všeobecné lékařství pro dospělé.
+            <p className="text-2xl md:text-3xl text-white/90 mb-6">
+              Bc. Martina Fialová – Zdravotní sestra
             </p>
-
-            {/* Team info */}
-            <p className="text-white/90 mb-8">
-              <span className="font-semibold">Bc. Martina Fialová</span> – Zdravotní sestra
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+              Zajišťujeme komplexní péči v oboru všeobecné lékařství pro dospělé.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#objednat" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-colors text-center shadow-lg">
