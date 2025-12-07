@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 interface HeroProps {
   siteName?: string
   subtitle?: string
@@ -36,18 +34,14 @@ export function Hero({ siteName, subtitle }: HeroProps) {
             </div>
           </div>
 
-          {/* Image - right side */}
+          {/* Logo icon - right side */}
           <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <Image
-                src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80"
-                alt="Fonendoskop"
-                fill
-                className="object-cover rounded-full shadow-2xl"
-                priority
-              />
-              {/* Decorative ring */}
-              <div className="absolute inset-0 rounded-full border-4 border-white/30"></div>
+            <div className="relative">
+              <svg className="w-72 h-72 lg:w-96 lg:h-96 text-white/20" viewBox="0 0 100 100" fill="currentColor">
+                <rect x="40" y="20" width="20" height="60" rx="4" fill="currentColor"/>
+                <rect x="20" y="40" width="60" height="20" rx="4" fill="currentColor"/>
+                <path d="M50 75 C50 75, 35 60, 35 52 C35 46, 42 42, 50 50 C58 42, 65 46, 65 52 C65 60, 50 75, 50 75Z" fill="white" opacity="0.3"/>
+              </svg>
             </div>
           </div>
         </div>
